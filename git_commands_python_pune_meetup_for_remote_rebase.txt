@@ -1,0 +1,125 @@
+  937  git clone https://github.com/ansible/ansible.git
+ 1105  git
+ 1108  mkdit test_git
+ 1109  mkdir test_git
+ 1111  cd test_git/
+ 1112  git init
+ 1119  git status
+ 1120  git add .
+ 1121  git status
+ 1122  ll .git/
+ 1123  ll .git/refs/
+ 1124  ll .git/refs/heads/
+ 1125  ll .git/refs/tags/
+ 1127  git commit -m "first commit"
+ 1128  git config --global user.email "devendra.bhat2@gmail.com"
+ 1129  git config --global user.name "Devendra Bhat"
+ 1130  git commit -m "first commit"
+ 1132  git status
+ 1133  git add fjdik.txt 
+ 1134  git status
+ 1137  git status
+ 1138  git add fli.txt 
+ 1139  git status
+ 1140  git commit -m "first commit"
+ 1144  git status
+ 1145  git checkout -- fli.txt
+ 1148  git status
+ 1149  git rm fli.txt
+ 1150  git status
+ 1151  git commit -m "first commit"
+ 1152  git status
+ 1157  cd test_git/
+ 1161  git commit -m "first commit"
+ 1162  git add gint.txt 
+ 1163  git commit -m "first commit"
+ 1165  git branch
+ 1166  git checkout -b
+ 1167  git checkout -b try
+ 1168  git checkout -b
+ 1169  git branch
+ 1172  git checkout master
+ 1174  git checkout try
+ 1176  git add gint.txt
+ 1177  git commit -m "first commit"
+ 1178  git checkout master
+ 1181  git checkout try
+ 1183  git remote add demo https://github.com/Devendrabhat/demo_git.git
+ 1184  git remote -v 
+ 1185  git push -u demo master
+ 1186  git checkout try
+ 1187  git push -u demo try
+ 1189  git log
+ 1190  git reset --hard c31e545e88c7ec123acb7de8d6717befe8e07844
+ 1193  git checkout master
+ 1195  git status
+ 1196  git log
+ 1197  git reset 1bdf0dcfafafa327689afceefb09c0f548868181
+ 1199  git status
+ 1201  git checkout -- .
+ 1202  git status
+ 1203  git reset -- hard 1bdf0dcfafafa327689afceefb09c0f548868181
+ 1208  git init
+ 1209  git add .
+ 1210  git commit -m "The fucking first"
+ 1211  git remote add origin https://github.com/Devendrabhat/Docker-HADOOP.git
+ 1212  git push -u origin master
+ 1217  git push -u origin master
+ 1227  git status
+ 1228  git rm files/hadoop-2.7.3.tar.gz 
+ 1229  git status
+ 1231  git add files/hadoop_download.sh
+ 1234  git rm files/hadoop_download.sh 
+ 1235  git status
+ 1236  git add .
+ 1237  git status
+ 1238  git commit -m "Removed the tar file"
+ 1239  git push -u origin master
+ 1240  git status
+ 1243  git status
+ 1244  git push -u origin master
+ 1246  git status
+ 1247  rm -rf .git
+ 1248  git init
+ 1249  git statu
+ 1250  git status
+ 1251  git add .
+ 1252  git remote add origin https://github.com/Devendrabhat/Docker-HADOOP.git
+ 1253  git push -u origin master
+ 1326  git init
+ 1331  git add code1.py 
+ 1333  git remote remove origin
+ 1334  git remote add origin git@github.com:Devendrabhat/Python-Practice.git
+ 1335  git remote -v
+ 1348  git push
+ 1351  git status
+ 1352  git push --set-upstream origin master
+ 1359  git add .
+ 1360  git commit -m "files1"
+ 1361  git push
+ 1365  ls -a | grep git
+ 1366  cat .gitconfig 
+ 1369  git status
+ 1370  git push
+ 1371  git push --set-upstream master
+ 1372  git push --set-upstream origin master
+ 1376  git status
+ 1377  git add .
+ 1378  git status
+ 1379  git commit -m "test"
+ 1380  git push
+ 1381  git remote -v
+ 1384  git remote -v
+ 1386  git remote -v
+ 1387  git remote remove origin 
+ 1388  git remote add origin git@github.com:Devendrabhat/Python-Practice.git
+ 1389  git remote -v
+ 1390  git fetch origin 
+ 1391  git status
+ 1393  git log
+ 1394  git push origin master
+ 1395  git pull
+ 1396  git fetch origin
+ 1397  git rebase origin/master 
+ 1398  git push origin master
+ 1399  history | grep git > git_commands_python_pune_meetup_for_remote_rebase.txt
